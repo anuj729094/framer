@@ -1,0 +1,60 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  background-color: #080915;
+}
+.pagessectionmenu li{
+ display: flex;
+  gap: 2px;
+  /* align-items: center; */
+  white-space: nowrap;
+  cursor: pointer;
+}
+.finance{
+  transition: 0.5s;
+  transition-property: all;
+}
+/* .testimonials{
+  box-shadow: 0 0 7px #5A51DF;
+} */
+
+.partners li img{
+   border-radius: 0.25rem;
+}
+.partners::-webkit-scrollbar{
+  display: none;
+}
+.pop li{
+  transition: 0.5s;
+  position: relative;
+}
+
+.pop li:hover{
+   transform: translateX(10px);
+   cursor: pointer;
+}
+.pop li:hover::before{
+  width: 100%;
+}
+.pop li::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #9D9EC7;
+  transition: 0.5s;
+  margin-top: 4rem;
+}
+
+@media screen and (width<1024px) {
+  .pagessectionmenu{
+    height: 25rem;
+    overflow-y: auto;
+  }
+}
